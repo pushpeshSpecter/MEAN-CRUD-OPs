@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.col, .row {
+  width: 100%;
+}
+.row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+._2NHqR1 {
+  margin-left: 65px;
+  width: 90%!important;
+  padding-top: 40px;
+}
+
+._16c-eX._16DdHx {
+  top: 64px;
+}
+._16c-eX {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #2874f0;
+  z-index: 2;
+}
+
+._1DXv5h {
+  border-top: 1px solid #454d5e;
+  padding: 25px 0;
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._16c-eX._16DdHx {
+  top: 64px;
+}
+._16c-eX {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #2874f0;
+  z-index: 2;
+}
+
+._16c-eX .kxUxS5 {
+  margin: 0 auto;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 16px 0 rgba(0,0,0,.11);
+  padding-top: 10px;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  visibility: hidden;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+
+}
+
+
+
+._1DXv5h ._1Dwg_s {
+  color: #fff;
+  margin-left: 8px;
+}
+
+
+._16c-eX._16DdHx {
+  top: 64px;
+}
+._16c-eX {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #2874f0;
+  z-index: 2;
+}
+
+.col, .row {
+  width: 100%;
+}
+.row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+._2NHqR1 {
+  margin-left: 65px;
+  width: 90%!important;
+  padding-top: 40px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+._3qd5C5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+
+.TW4owM {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+
+
+
+._2V3TtE {
+  font-style: normal;
+  color: #fff;
+  background-color: #172337;
+}
+
+._3Lv0nZ {
+  background-color: #fff;
+  font-size: 12px;
+}
+
+
+
+._3qd5C5:last-child {
+  margin-right: 0;
+}
+._3qd5C5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+
+
+.m6ABEi {
+    margin-bottom: 10px;
+    padding-left: 14px;
+}
+
+
+._18wTSA {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+*{
+  font-family: 'Futura'
+}
+
+
+._3Lv0nZ ._3aS5mM {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+._3Lv0nZ div, ._3Lv0nZ h1, ._3Lv0nZ h2, ._3Lv0nZ h3, ._3Lv0nZ h4, ._3Lv0nZ h5, ._3Lv0nZ h6, ._3Lv0nZ p {
+  margin-bottom: 10px;
+  padding: 0;
+  line-height: 1.5;
+}
+
+
+._1DXv5h {
+  border-top: 1px solid #454d5e;
+  padding: 25px 0;
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+
+._2tFDQF {
+  color: #fff;
+}
+
+._16c-eX._16DdHx {
+  top: 64px;
+}
+._16c-eX {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #2874f0;
+  z-index: 2;
+}
+
+._16c-eX .kxUxS5 {
+  margin: 0 auto;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 16px 0 rgba(0,0,0,.11);
+  padding-top: 10px;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+  visibility: hidden;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+._287FRX {
+  line-height: 2;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+

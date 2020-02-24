@@ -1,0 +1,81 @@
+<br /><br />
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-8 ">
+            <div class="main">
+                <p class="sign" align="center">Register here</p>
+                <br />
+                <form [formGroup]="registerForm" autocomplete="off" (ngSubmit)="onRegisterSubmit()">
+                    <div class="form-group">
+                        <!-- <label>Name</label> -->
+                        <input type="text" class="form-control un" formControlName="name"
+                            placeholder="Please enter your Name" />
+                            <div *ngIf="submitted && registerForm.controls.name.errors" class="error">
+                                    <div class="text-danger offset-lg-1" *ngIf="registerForm.controls.name.errors.required">
+                                        <b>Name is required, duh! </b>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>User Name</label> --> 
+                        <input type="text" class="form-control pass" formControlName="username"
+                            placeholder="Choose a username" />
+                            <div *ngIf="submitted && registerForm.controls.username.errors" class="error">
+                                    <div class="text-danger offset-lg-1" *ngIf="registerForm.controls.username.errors.required">
+                                        <b>Username is required, duh! </b>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Email</label> -->
+                        <input type="email" class="form-control pass email" formControlName="email"id="email"
+                            placeholder="Please enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                            <div *ngIf="submitted && registerForm.controls.email.errors" class="error">
+                                    <div class="text-danger offset-lg-1" *ngIf="registerForm.controls.email.errors.required">
+                                        <b>Please proceed with a valid email!!!</b>
+                                    </div>
+                                </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <!-- <label>Password</label> -->
+                        <input type="password" class="form-control un" formControlName="password"
+                            placeholder="Fill-in a password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                            <div *ngIf="submitted && registerForm.controls.password.errors" class="error">
+                                    <div class="text-danger offset-lg-1 " *ngIf="registerForm.controls.password.errors.required">
+                                        <b> Please proceed with a valid password!!! </b>
+                                    </div>
+                                </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="wrapper">
+                        <button align="center" class="btn btn-success" >Submit</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <br>
+                    <div *ngIf="submitted && egisterForm.invalid" class="error">
+                            <div class="text-danger">
+                                Improper credentials.
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 ">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src='assets/images/register.png' alt='register here'>
+        </div>
+    </div>
+</div>
+
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+<!-- <script src="js/jquery.email-autocomplete.js"></script> -->

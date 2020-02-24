@@ -1,0 +1,152 @@
+<br />
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-lg-8" align='center'>
+            <h3 class="sign"><b>(+)ADD PRODUCTS</b> </h3>
+            <br />
+
+
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+                <div class="card">
+                    <br>
+                    <!-- product id-->
+                    <div class="form-group" id="color">
+                        <!-- <label for="productId"><b>Product Id</b></label> -->
+                        <input type="number" class="form-control focus un" formControlName="productId" id="productId"
+                            placeholder="Product Id" />
+
+                        <div *ngIf="submitted && addForm.controls.productId.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.productId.errors.required">Product Id is
+                                required
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--product name-->
+                    <div class="form-group" id="color">
+                        <!-- <label for="productName"><b>Product Name</b></label> -->
+                        <input type="text" class="form-control un " formControlName="productName" id="productName"
+                            placeholder="Product Name" />
+
+
+                        <div *ngIf="submitted && addForm.controls.productName.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.productName.errors.required">First Name is
+                                required
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end of product name text box -->
+                    <!-- description -->
+
+                    <div class="form-group" id="color">
+
+                        <!-- <label for="description"><b>description</b></label> -->
+                        <input type="text" class="form-control focus un" formControlName="description" id="description"
+                            placeholder="Add Description" />
+                        <div *ngIf="submitted && addForm.controls.description.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.description.errors.required">Description is
+                                required
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- end of description -->
+
+                    <!--Quantity-->
+                    <div class="form-group" id="color">
+                        <!-- <label for="quantity"><b>Quantity</b></label> -->
+                        <input type="number" class="form-control un " formControlName="quantity" id="quantity"
+                            placeholder="Quantity" />
+
+                        <div *ngIf="submitted && addForm.controls.quantity.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.quantity.errors.required">Quantity is
+                                required
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- price-->
+                    <div class="form-group" id="color">
+                        <!-- <label for="price"><b>Price</b></label> -->
+                        <input type="number" class="form-control focus un" formControlName="price" id="price"
+                            placeholder="Price" />
+
+                        <div *ngIf="submitted && addForm.controls.price.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.price.errors.required">Price is required
+                            </div>
+
+                        </div>
+                    </div>
+                </div><br>
+                <!-- end of price text box-->
+                <!--customer Name-->
+                <div class="card"><br>
+                    <div class="form-group" id="color">
+                        <!-- <label for="customerName"><b>Customer Name</b></label> -->
+                        <input type="text" class="form-control  pass" formControlName="customerName" id="customerName"
+                            placeholder="Customer Name" />
+
+
+                        <div *ngIf="submitted && addForm.controls.customerName.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.customerName.errors.required">Customer Name
+                                is required
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Address-->
+                    <div class="form-group" id="color">
+
+                        <!-- <label for="address"><b>Address</b></label> -->
+                        <input type="text" class="form-control focus pass" formControlName="address" id="address"
+                            placeholder="Address" />
+
+                        <div *ngIf="submitted && addForm.controls.address.errors" class="error">
+
+                            <div class="text-danger" *ngIf="addForm.controls.address.errors.required">Address is
+                                required
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Beginning of mobile number textbox-->
+
+                    <div class="form-group" id="color">
+                        <!-- <label for="mobileNumber"><b>Mobile Number</b></label> -->
+                        <input type="text" class="form-control  pass" formControlName="mobileNumber" id="mobileNumber"
+                            placeholder="10-digit Mobile number" />
+
+                        <div *ngIf="submitted && addForm.controls.mobileNumber.errors" class="error">
+                            <div class="text-danger" *ngIf="addForm.controls.mobileNumber.errors.required">Mobile number
+                                is required
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class='text-center'>
+                    <button class="btn btn-success btn-lg"><b>Save</b></button>
+                    &nbsp;&nbsp;
+
+                    <button class="btn btn-danger btn-md " type="reset"> cancel</button>
+                    &nbsp;&nbsp;
+                    <a class="btn btn-default btn-md" [routerLink]="['/list-product']">Back to List</a>
+                </div>
+                <br />
+                <br />
+
+            </form>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <br><br><br><br><br>
+            <img src='assets/images/cart.png' width="600" alt='cart'>
+        </div>
+    </div>
+</div>

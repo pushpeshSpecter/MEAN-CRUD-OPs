@@ -1,0 +1,148 @@
+<br /><br />
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-lg-8">
+      <h3 class="sign"><b> EDIT PRODUCT</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger" (click)="logOutUser()">LogOff</button>
+      </h3>
+      <br />
+
+      <!-- Reactive Forms -->
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+        
+        <!-- product id-->
+      
+<div class="card">
+  <br>
+        <div class="form-group row" id="color">
+          <label for="productId" class="col-lg-3 text-right font-weight-bold">ProductId : </label>
+          <input type="productId" class="form-control col-lg-5  un" formControlName="productId" id="productId"
+            placeholder="Edit Product Id" />
+
+          <div *ngIf="submitted && editForm.controls.productId.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.productId.errors.required">
+              quantity is required !
+            </div>
+
+          </div>
+        </div>
+
+        <!--Product name-->
+        <div class="form-group row" id="color">
+          <label for="productName" class="col-lg-3 text-right font-weight-bold">Product Name: </label>
+          <input type="text" class="form-control col-lg-5 focus un" formControlName="productName" id="productName"
+            placeholder="Edit Product Name" />
+
+          <div *ngIf="submitted && editForm.controls.productName.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.productName.errors.required">
+              Product Name is required !!!
+            </div>
+          </div>
+        </div>
+        <!--description-->
+
+        <div class="form-group row" id="color">
+          <label for="description" class="col-lg-3 text-right font-weight-bold">Description: </label>
+          <input type="text" class="form-control col-lg-5 un" formControlName="description" id="description"
+            placeholder="Edit Description" />
+
+          <div *ngIf="submitted && editForm.controls.description.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.description.errors.required">
+              Description is required !!!
+            </div>
+          </div>
+        </div>
+
+        <!-- qUANTITY -->
+
+        <div class="form-group row" id="color">
+          <label for="quantity" class="col-lg-3 text-right font-weight-bold">Quantity: </label>
+          <input type="quantity" class="form-control col-lg-5 focus un" formControlName="quantity" id="quantity"
+            placeholder="Edit Quantity" />
+
+          <div *ngIf="submitted && editForm.controls.quantity.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.quantity.errors.required">
+              quantity is required !!!
+            </div>
+
+          </div>
+        </div>
+
+        <!--Price-->
+
+
+        <div class="form-group row" id="color">
+          <label for="price" class="col-lg-3 text-right font-weight-bold">Price : </label>
+          <input type="price" class="form-control col-lg-5  un" formControlName="price" id="price"
+            placeholder="Edit Price" />
+
+          <div *ngIf="submitted && editForm.controls.price.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.price.errors.required">
+              Price is required !!!
+            </div>
+
+          </div>
+        </div>
+      </div><br>
+
+        <!--customer name-->
+<div class="card">
+  <br>
+        <div class="form-group row" id="color">
+          <label for="customerName" class="col-lg-3 text-right font-weight-bold">Customer Name: </label>
+          <input type="customerName" class="form-control col-lg-5 focus un" formControlName="customerName"
+            id="customerName" placeholder="Customer Name" />
+
+          <div *ngIf="submitted && editForm.controls.customerName.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.customerName.errors.required">
+              Customer Name is required ..
+            </div>
+          </div>
+        </div>
+    
+
+        <!--address-->
+        <div class="form-group row" id="color">
+          <label for="address" class="col-lg-3 text-right font-weight-bold">Address: </label>
+          <input type="text" class="form-control col-lg-5 focus un " formControlName="address" id="address"
+            placeholder="Address Changes" />
+
+          <div *ngIf="submitted && editForm.controls.address.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.address.errors.required">
+              Address is required ..
+            </div>
+          </div>
+        </div>
+
+        <!--Mobile Number-->
+        <div class="form-group row" id="color">
+          <label for="mobileNumber" class="col-lg-3 text-right font-weight-bold">Mobile Number: </label>
+          <input type="text" class="form-control col-lg-5 focus un" formControlName="mobileNumber" id="mobileNumber"
+            placeholder="10-digit Mobile Number" />
+
+          <div *ngIf="submitted && editForm.controls.mobileNumber.errors" class="error">
+            <div class="text-danger" *ngIf="editForm.controls.mobileNumber.errors.required">
+              Mobile Number is required ..
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+        <div class="text-center">
+          <button class="btn btn-success">Update</button>
+          &nbsp;&nbsp;
+          <a class="btn btn-danger" [routerLink]="['/list-product']">Cancel</a>
+          <br><br><br> 
+        </div>
+      </form>
+<br>
+    </div>
+   
+    <div class="col-md-4 col-lg-4">
+        <br> <br><br> <br> <br> <br><br> <br>
+        <br> <br><br> <br>
+        <img src='assets/images/edit.jpeg' alt='login here' width="500" height='300' >
+    </div>
+  </div>
+</div>

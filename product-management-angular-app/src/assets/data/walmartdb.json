@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "id": 1,
+      "productId": 10,
+      "productName": "Scissors",
+      "description": "Use this to cut stuff",
+      "quantity": 10,
+      "price": 6.99,
+      "customerName": "Amit",
+      "address": "pune",
+      "mobileNumber": 7004502005
+    },
+    {
+      "id": 2,
+      "productId": 20,
+      "productName": "Steak knifes",
+      "description": "Use this to eat food",
+      "quantity": 20,
+      "price": 10.99,
+      "customerName": "Baman",
+      "address": "delhi",
+      "mobileNumber": 7004502006
+    },
+    {
+      "id": 3,
+      "productId": 30,
+      "productName": "Skewers",
+      "description": "Use this to roast food",
+      "quantity": 30,
+      "price": 23.45,
+      "customerName": "Harvey",
+      "address": "Manhattan",
+      "mobileNumber": 7004502007
+    },
+    {
+      "id": 4,
+      "productId": 40,
+      "productName": "Baking Tray",
+      "description": "Use this to bake food",
+      "quantity": 40,
+      "price": 33.45,
+      "customerName": "Donna",
+      "address": "NYC",
+      "mobileNumber": 7004502008
+    },
+    {
+      "id": 5,
+      "productId": 50,
+      "productName": "Data",
+      "description": "Use to store data",
+      "quantity": 50,
+      "price": 53.45,
+      "customerName": "Louis",
+      "address": "Hawai",
+      "mobileNumber": 7004502009
+    }
+  ]
+}
